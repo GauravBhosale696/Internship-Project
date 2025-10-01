@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaurav - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (For social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,63 +20,116 @@
     <header>
         <nav>
             <div class="left">Gaurav's Portfolio</div>
+
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
             <div class="right">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#languages" class="nav-link">Languages</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="firstsection" id="home">
+        <!-- Home Section -->
+        <section class="firstsection reveal" id="home">
             <div class="leftsection">
                 Hi, My name is <span class="purple">Gaurav</span>
                 <div>And I am a passionate</div>
-                <span id="element"></span>
+                <span id="typed"></span>
                 <div class="buttons">
                     <a href="Modern Minimalist Professional CV Resume.pdf" download class="btn">Download Resume</a>
                     <a href="https://github.com/GauravBhosale696" target="_blank" class="btn">Visit GitHub</a>
                 </div>
             </div>
             <div class="rightsection">
-                <img src="bg.png" alt="">
+                <img src="bg.png" alt="Profile">
             </div>
         </section>
 
         <hr>
 
-        <section class="secondSection" id="skills">
+        <!-- About -->
+        <section class="secondSection reveal" id="about">
+            <h1>About Me</h1>
+            <p class="about-text">I'm a developer and engineering student focused on building clean, responsive, and
+                performant web experiences. I love solving problems, learning new tools, and collaborating on
+                projects that matter.</p>
+        </section>
+
+        <hr>
+
+        <!-- Technical Skills -->
+        <section class="secondSection reveal" id="skills">
             <h1>Technical Skills</h1>
             <div class="skills">
                 <div class="skill-card">
                     <img src="frontendlogo.png" alt="Frontend">
                     <h3>Frontend Development</h3>
-                    <p>I specialize in frontend development with a strong foundation in HTML, CSS, and JavaScript. I
-                        enjoy building clean, responsive, and user-friendly interfaces that bring ideas to life on the
-                        web.</p>
+                    <p>I specialize in frontend development with HTML, CSS, and JavaScript — building clean,
+                        responsive interfaces.</p>
                 </div>
 
                 <div class="skill-card">
                     <img src="c-logo-icon-28389.png" alt="C++">
                     <h3>C++ Programming</h3>
-                    <p>I have strong programming skills in C++, with a solid understanding of Object-Oriented
-                        Programming (OOP) and Data Structures. I enjoy solving problems by writing clean, efficient, and
-                        optimized code.</p>
+                    <p>Strong foundation in C++ with OOP and data structures. I enjoy writing optimized code.</p>
                 </div>
 
                 <div class="skill-card">
                     <img src="Python-Logo-PNG.png" alt="Python">
                     <h3>Python Programming</h3>
-                    <p>I use Python for problem-solving and developing efficient solutions. I have hands-on experience
-                        with Flask for creating dynamic and scalable web applications, and I enjoy exploring Python’s
-                        versatility across domains.</p>
+                    <p>Python for problem solving and small web apps (Flask). I enjoy rapid prototyping.</p>
                 </div>
             </div>
         </section>
+
+        <hr>
+
+        <!-- Languages (Soft Skills Section) -->
+        <section class="secondSection reveal" id="languages">
+            <h1>Languages</h1>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>English</h3>
+                    <p class="level">Fluent</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Hindi</h3>
+                    <p class="level">Fluent</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Marathi</h3>
+                    <p class="level">Native</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Japanese</h3>
+                    <p class="level">Beginner</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact -->
+        <section class="secondSection reveal" id="contact">
+            <h1>Contact</h1>
+            <p>If you'd like to collaborate, email me at <a href="mailto:bhosalegaurav39@gmail.com">bhosalegaurav39@gmail.com</a>
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/GauravBhosale696" target="_blank" class="btn small">GitHub</a>
+                <a href="https://www.linkedin.com/in/gaurav-bhosale-8b1a05319/" target="_blank" class="btn small">LinkedIn</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -84,28 +140,19 @@
             </div>
             <div>
                 <h3>Connect with me</h3>
-                <div class="social-icons">
-                    <a href="https://github.com/GauravBhosale696" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/gaurav-bhosale-8b1a05319/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="mailto:bhosalegaurav39@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
+                <div class="social-icons"> <a href="https://github.com/GauravBhosale696" target="_blank"><i
+                                class="fab fa-github"></i></a> <a
+                            href="https://www.linkedin.com/in/gaurav-bhosale-8b1a05319/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a> <a href="mailto:bhosalegaurav39@gmail.com"><i
+                                class="fas fa-envelope"></i></a> </div>
             </div>
         </div>
-        <div class="footer-rights">
-            Copyright &copy; www.gauravsportfolio.com | All rights reserved.
-        </div>
+        <div class="footer-rights"> Copyright &copy; www.gauravsportfolio.com | All rights reserved. </div>
     </footer>
 
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
-    </script>
-<script>            var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Engineering Student'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true
-        });</script>
+    <!-- Separate JS file -->
+    <script src="script.js" defer></script>
 </body>
 
 </html>
+
